@@ -16,6 +16,9 @@ import { EgovComponent } from './egov/egov.component';
 import { CbidComponent } from './cbid/cbid.component';
 import { ReceiptComponent } from './receipt/receipt.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { Landing3Component } from './landing3/landing3.component';
+import { Landing4Component } from './landing4/landing4.component';
+import { AuditTrailComponent } from './audit-trail/audit-trail.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     EgovComponent,
     CbidComponent,
     ReceiptComponent,
-    DashboardComponent
+    DashboardComponent,
+    Landing3Component,
+    Landing4Component,
+    AuditTrailComponent
   ],
   imports: [
     CommonModule,

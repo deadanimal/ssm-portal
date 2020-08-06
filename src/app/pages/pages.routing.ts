@@ -7,6 +7,8 @@ import { CbidComponent } from './cbid/cbid.component';
 import { EgovComponent } from './egov/egov.component';
 import { ReceiptComponent } from './receipt/receipt.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { Landing3Component } from './landing3/landing3.component';
+import { Landing4Component } from './landing4/landing4.component';
 
 export const PagesRoutes: Routes = [
     {
@@ -43,6 +45,14 @@ export const PagesRoutes: Routes = [
             {
                 path: 'dashboard',
                 component: DashboardComponent
+            },
+            {
+                path: 'landing3',
+                component: Landing3Component
+            },
+            {
+                path: 'landing4',
+                component: Landing4Component
             }
         ]
     }
