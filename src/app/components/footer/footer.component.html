@@ -1,63 +1,85 @@
 <footer class="footer">
-  <div class="container">
-    <div class="row row-grid align-items-center mb-5">
-      <div class="col-lg-6">
-        <h3 class="text-primary font-weight-light mb-2">
+	<div class="container">
+		<div class="row row-grid align-items-center mb-5">
+			<div class="col-lg-6">
+				<h3 class="text-primary font-weight-light mb-2">
 
-        </h3>
-        <h4 class="mb-0 font-weight-light">
-          Let's get in touch on any of these platforms.
-        </h4>
-      </div>
-      <div class="col-lg-6 text-lg-center btn-wrapper">
-        <button
-          class="btn btn-icon-only btn-twitter rounded-circle mr-3"
-          href="https://twitter.com/"
-          target="_blank"
-        >
-          <span class="btn-inner--icon">
-            <i class="fa fa-twitter"> </i>
-          </span>
-        </button>
-        <button
-          class="btn-icon-only rounded-circle btn btn-facebook mr-3"
-          href="https://www.facebook.com/"
-          target="_blank"
-        >
-          <span class="btn-inner--icon">
-            <i class="fab fa-facebook-f"> </i>
-          </span>
-        </button>
-      </div>
-    </div>
-    <hr />
+				</h3>
+				<h4 class="mb-0 font-weight-light">
+					Let's get in touch on any of these platforms.
+				</h4>
+			</div>
 
-    <div class="row align-items-center justify-content-md-between">
-      <div class="col-md-6">
-        <div class="copyright">
-          © {{ date | date: "yyyy" }}
-          <a href="" target="_blank"> SSM </a> .
-        </div>
-      </div>
-      <div class="col-md-6">
-        <ul class="nav nav-footer justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.ssm.com.my/" target="_blank"> SSM </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="" target="_blank"> About Us </a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href=""
-              target="_blank"
-            >
-              FAQ
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
+			<div class="col-lg-6 text-lg-right btn-wrapper">
+				<button
+					class="btn btn-icon-only btn-facebook rounded-circle mr-3"
+					href="https://www.facebook.com/ssmofficialpage"
+					target="_blank"
+				>
+					<span class="btn-inner--icon">
+						<i class="fab fa-facebook-f"> </i>
+					</span>
+				</button>
+
+				<button
+					class="btn btn-icon-only btn-twitter rounded-circle mr-3"
+					href="https://twitter.com/ssmofficialpage"
+					target="_blank"
+				>
+					<span class="btn-inner--icon">
+						<i class="fab fa-twitter"> </i>
+					</span>
+				</button>
+
+				<button
+					class="btn btn-icon-only btn-instagram rounded-circle mr-3"
+					href="https://www.instagram.com/ssmofficialpage/"
+					target="_blank"
+				>
+					<span class="btn-inner--icon">
+						<i class="fab fa-instagram"> </i>
+					</span>
+				</button>
+
+				<button
+					class="btn btn-icon-only btn-youtube rounded-circle mr-3"
+					href="https://www.youtube.com/user/ssmofficialpage"
+					target="_blank"
+				>
+					<span class="btn-inner--icon">
+						<i class="fab fa-youtube"> </i>
+					</span>
+				</button>
+			</div>
+		</div>
+		<hr />
+
+		<div class="row align-items-center justify-content-md-between">
+			<div class="col-md-6">
+				<div class="copyright">
+					© {{ date | date: "yyyy" }}
+					<a href="" target="_blank"> Suruhanjaya Syarikat Malaysia </a>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<ul class="nav nav-footer justify-content-end">
+					<li class="nav-item">
+						<a class="nav-link" href="https://www.ssm.com.my/" target="_blank">
+							SSM 
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" (click)="navigatePage('/about-us')">
+							About Us
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" (click)="navigatePage('/faq')">
+							FAQ
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 </footer>

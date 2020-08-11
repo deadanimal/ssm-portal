@@ -27,7 +27,7 @@ export const PagesRoutes: Routes = [
                 component: Search1Component
             },
             {
-                path: 'cart',
+                path: 'cartt',
                 component: CartComponent
             },
             {
