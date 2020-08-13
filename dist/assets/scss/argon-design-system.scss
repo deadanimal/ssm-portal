@@ -16,22 +16,25 @@ Coded by www.creative-tim.com
  */
 
 // Bootstrap Functions
-@import "bootstrap/functions";
+@import 'bootstrap/functions';
 
 // Custom Variables
-@import "custom/variables";
+@import 'custom/variables';
 
 // Theme Variables
-@import "theme/variables-pro";
+@import 'theme/variables-pro';
 
 // Bootstrap Core
-@import "bootstrap/bootstrap";
+@import 'bootstrap/bootstrap';
 
 // Theme Core
-@import "theme/theme-pro";
+@import 'theme/theme-pro';
 
 // Custom Variables
-@import "custom/styles";
+@import 'custom/styles';
 
 // Angular diferences
-@import "angular/angular-differences";
+@import 'angular/angular-differences';
+
+// Pipeline
+@import 'custom/pipe';

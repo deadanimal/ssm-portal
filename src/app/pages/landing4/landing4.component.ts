@@ -10,6 +10,8 @@ import { Autoplay } from '@glidejs/glide/dist/glide.modular.esm'
 export class Landing4Component implements OnInit {
 
   focus
+  public totalCompanies: number = 1360941;
+  public totalBusinessess: number = 7810212;
   
   constructor() {}
   scrollToDownload(element: any) {

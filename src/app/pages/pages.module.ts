@@ -19,6 +19,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { Landing3Component } from './landing3/landing3.component';
 import { Landing4Component } from './landing4/landing4.component';
 import { AuditTrailComponent } from './audit-trail/audit-trail.component';
+import { ChangelogComponent } from './changelog/changelog.component';
+import { TmNgOdometerModule } from 'tm-ng-odometer';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { AuditTrailComponent } from './audit-trail/audit-trail.component';
     DashboardComponent,
     Landing3Component,
     Landing4Component,
-    AuditTrailComponent
+    AuditTrailComponent,
+    ChangelogComponent
   ],
   imports: [
     CommonModule,
@@ -43,7 +46,8 @@ import { AuditTrailComponent } from './audit-trail/audit-trail.component';
     CarouselModule.forRoot(),
     PaginationModule.forRoot(),
     TabsModule.forRoot(),
-    RouterModule.forChild(PagesRoutes)
+    RouterModule.forChild(PagesRoutes),
+    TmNgOdometerModule
   ]
 })
 export class PagesModule { }

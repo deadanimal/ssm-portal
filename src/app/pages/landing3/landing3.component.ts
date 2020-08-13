@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class Landing3Component implements OnInit {
 
   focus 
+  public totalCompanies: number = 1360941;
+  public totalBusinessess: number = 7810212;
   
   constructor() { }
 

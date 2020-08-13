@@ -127,9 +127,9 @@
               class="col-lg-5 col-md-5 d-flex justify-content-center flex-column"
             >
               <!-- <h4 class="description text-white">
-                  You need more information? Check what other persons are saying
-                  about our product. They are very happy with their purchase.
-                </h4> -->
+                You need more information? Check what other persons are saying
+                about our product. They are very happy with their purchase.
+              </h4> -->
               <div class="info info-horizontal">
                 <div
                   class="icon icon-shape icon-shape-primary shadow rounded-circle text-white"
@@ -138,7 +138,8 @@
                 </div>
                 <div class="description">
                   <h3 class="info-title text-white">
-                    Companies : 1,360,941
+                    Companies : 
+                    <tm-ng-odometer [number]="totalCompanies"></tm-ng-odometer>
                   </h3>
                   <h4 class="description ml-3 text-white">
                     Local: 1,356,052
@@ -158,7 +159,8 @@
                 </div>
                 <div class="description">
                   <h3 class="info-title text-white">
-                    Businesses: 7,810,212
+                    Businesses:
+                    <tm-ng-odometer [number]="totalBusinessess"></tm-ng-odometer>
                   </h3>
                   <h4 class="description ml-3 text-white">
                     Sole Proprietorship: 6,446,741
@@ -174,158 +176,92 @@
       </div>
     </div>
   
-    <div class="cd-section" id="blogs">
-      <section class="blogs-2">
-        <div class="container-fluid">
-          <div class="row mb-md-5">
-            <div class="col-md-8 mx-auto">
-              <h3 class="display-3 text-center">Site map</h3>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-3">
-              <div
-                class="card card-blog card-background"
-                data-animation="zooming"
-              >
-                <div
-                  class="full-background"
-                  style="background-image: url('assets/img/carousel/1.jpg');"
-                ></div>
-                <a href="javascript:;">
-                  <div class="card-body">
-                    <div class="content-bottom">
-                      <h6 class="card-category text-white opacity-8"></h6>
-                      <h5 class="card-title">About Us</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-3">
-              <div
-                class="card card-blog card-background"
-                data-animation="zooming"
-              >
-                <div
-                  class="full-background"
-                  style="background-image: url('assets/img/carousel/2.jpg');"
-                ></div>
-                <a href="javascript:;">
-                  <div class="card-body">
-                    <div class="content-bottom">
-                      <h6 class="card-category text-white opacity-8"></h6>
-                      <h5 class="card-title">Contact Us</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-3">
-              <div
-                class="card card-blog card-background"
-                data-animation="zooming"
-              >
-                <div
-                  class="full-background"
-                  style="background-image: url('assets/img/carousel/3.jpg');"
-                ></div>
-                <a href="javascript:;">
-                  <div class="card-body">
-                    <div class="content-bottom">
-                      <h6 class="card-category text-white opacity-8"></h6>
-                      <h5 class="card-title">User Guide</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-3">
-              <div
-                class="card card-blog card-background"
-                data-animation="zooming"
-              >
-                <div
-                  class="full-background"
-                  style="background-image: url('assets/img/carousel/4.jpg');"
-                ></div>
-                <a href="javascript:;">
-                  <div class="card-body">
-                    <div class="content-bottom">
-                      <h6 class="card-category text-white opacity-8"></h6>
-                      <h5 class="card-title">FAQ</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
+    <section class="blogs-2">
+      <div class="container-fluid">
+        <div class="row mb-md-5">
+          <div class="col-md-8 mx-auto">
+            <h3 class="display-3 text-center">Site map</h3>
           </div>
         </div>
-      </section>
-  
-      <div class="contactus-3">
-        <div class="container pt-5">
-          <div class="row">
-            <div class="col-md-12 text-center mb-5">
-              <h1 class="display-1">Login as</h1>
+        <div class="row">
+          <div class="col-lg-3">
+            <div
+              class="card card-blog card-background"
+              data-animation="zooming"
+            >
+              <div
+                class="full-background"
+                style="background-image: url('assets/img/carousel/1.jpg');"
+              ></div>
+              <a href="javascript:;">
+                <div class="card-body">
+                  <div class="content-bottom">
+                    <h6 class="card-category text-white opacity-8"></h6>
+                    <h5 class="card-title">About SSM Product</h5>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
-          <div class="row">
-            <div class="col-lg-3 col-md-6 col-6">
-              <div class="info info-hover">
-                <div
-                  class="icon icon-shape icon-shape-primary icon-lg shadow rounded-circle text-primary"
-                >
-                  <i class="fas fa-user"> </i>
+          <div class="col-lg-3">
+            <div
+              class="card card-blog card-background"
+              data-animation="zooming"
+            >
+              <div
+                class="full-background"
+                style="background-image: url('assets/img/carousel/2.jpg');"
+              ></div>
+              <a href="javascript:;">
+                <div class="card-body">
+                  <div class="content-bottom">
+                    <h6 class="card-category text-white opacity-8"></h6>
+                    <h5 class="card-title">SSM eShop</h5>
+                  </div>
                 </div>
-                <br />
-                <button class="btn btn-icon btn-primary mt-3" type="button">
-                  <span class="btn-inner--text"> eGovernment </span>
-                </button>
-              </div>
+              </a>
             </div>
-            <div class="col-lg-3 col-md-6 col-6">
-              <div class="info info-hover">
-                <div
-                  class="icon icon-shape icon-shape-primary icon-lg shadow rounded-circle text-primary"
-                >
-                  <i class="fas fa-user"> </i>
+          </div>
+          <div class="col-lg-3">
+            <div
+              class="card card-blog card-background"
+              data-animation="zooming"
+            >
+              <div
+                class="full-background"
+                style="background-image: url('assets/img/carousel/3.jpg');"
+              ></div>
+              <a href="javascript:;">
+                <div class="card-body">
+                  <div class="content-bottom">
+                    <h6 class="card-category text-white opacity-8"></h6>
+                    <h5 class="card-title">eGov</h5>
+                  </div>
                 </div>
-                <br />
-                <button class="btn btn-icon btn-primary mt-3" type="button">
-                  <span class="btn-inner--text"> CBID </span>
-                </button>
-              </div>
+              </a>
             </div>
-            <div class="col-lg-3 col-md-6 col-6">
-              <div class="info info-hover">
-                <div
-                  class="icon icon-shape icon-shape-primary icon-lg shadow rounded-circle text-primary"
-                >
-                  <i class="fas fa-user"> </i>
+          </div>
+          <div class="col-lg-3">
+            <div
+              class="card card-blog card-background"
+              data-animation="zooming"
+            >
+              <div
+                class="full-background"
+                style="background-image: url('assets/img/carousel/4.jpg');"
+              ></div>
+              <a href="javascript:;">
+                <div class="card-body">
+                  <div class="content-bottom">
+                    <h6 class="card-category text-white opacity-8"></h6>
+                    <h5 class="card-title">Enquiry / FAQ</h5>
+                  </div>
                 </div>
-                <br />
-                <button class="btn btn-icon btn-primary mt-3" type="button">
-                  <span class="btn-inner--text"> Custom Listing </span>
-                </button>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-6">
-              <div class="info info-hover">
-                <div
-                  class="icon icon-shape icon-shape-primary icon-lg shadow rounded-circle text-primary"
-                >
-                  <i class="fas fa-user"> </i>
-                </div>
-                <br />
-                <button class="btn btn-icon btn-primary mt-3" type="button">
-                  <span class="btn-inner--text"> Product </span>
-                </button>
-              </div>
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </div>
   

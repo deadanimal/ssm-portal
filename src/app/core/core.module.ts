@@ -11,10 +11,14 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
 import { RouterModule } from '@angular/router';
 import { CoreRoutes } from './core.routing';
 import { CartComponent } from './cart/cart.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { OrdersComponent } from './orders/orders.component';
 
 @NgModule({
   declarations: [
-    CartComponent
+    CartComponent,
+    CheckoutComponent,
+    OrdersComponent
   ],
   imports: [
     CommonModule,

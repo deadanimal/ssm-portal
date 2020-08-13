@@ -9,6 +9,9 @@ import { Autoplay } from '@glidejs/glide/dist/glide.modular.esm'
 })
 export class LandingComponent implements OnInit {
 
+  public totalCompanies: number = 1360941;
+  public totalBusinessess: number = 7810212;
+  
   constructor() {}
   scrollToDownload(element: any) {
     element.scrollIntoView({ behavior: "smooth" });

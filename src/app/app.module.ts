@@ -20,6 +20,7 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
 import { LoadingBarModule } from '@ngx-loading-bar/core';
 import { TagInputModule } from 'ngx-chips';
+import { TmNgOdometerModule } from 'tm-ng-odometer';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -56,7 +57,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     ProgressbarModule.forRoot(),
     TabsModule.forRoot(),
     TimepickerModule.forRoot(),
-    TooltipModule.forRoot()
+    TooltipModule.forRoot(),
+    TmNgOdometerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
