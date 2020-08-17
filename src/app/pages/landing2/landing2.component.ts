@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import Glide from "@glidejs/glide";
 import { Autoplay } from '@glidejs/glide/dist/glide.modular.esm'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-landing2',
@@ -13,7 +14,10 @@ export class Landing2Component implements OnInit {
   public totalCompanies: number = 1360941;
   public totalBusinessess: number = 7810212;
   
-  constructor() {}
+  constructor(
+    private router: Router
+  ) {}
+
   scrollToDownload(element: any) {
     element.scrollIntoView({ behavior: "smooth" });
   }
@@ -40,6 +44,11 @@ export class Landing2Component implements OnInit {
     body.classList.remove("presentation-page");
     var navbar = document.getElementById("navbar-main");
     navbar.classList.remove("bg-primary");
+  }
+  
+  navigatePage(path: string) {
+    // console.log('Path: ', path)
+    this.router.navigate([path])
   }
 
 }

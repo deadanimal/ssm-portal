@@ -38,3 +38,12 @@ Coded by www.creative-tim.com
 
 // Pipeline
 @import 'custom/pipe';
+
+// ngx-toastr
+// Regular style toast
+@import '~ngx-toastr/toastr';
+
+// Bootstrap style toast
+// or import a bootstrap 4 alert styled design (SASS ONLY)
+// Should be after your bootstrap imports, it uses bs4 variables, mixins, functions
+// @import '~ngx-toastr/toastr-bs4-alert';

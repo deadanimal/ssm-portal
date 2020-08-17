@@ -254,8 +254,8 @@
 							<i class="ni ni-bullet-list-67 text-success"> </i> FAQ
 						</a>
 						
-						<a class="dropdown-item" (click)="navigatePage('/search1')">
-							<i class="ni ni-bullet-list-67 text-success"> </i> Search Result
+						<a class="dropdown-item" (click)="navigatePage('/product-listing')">
+							<i class="ni ni-bullet-list-67 text-success"> </i> Product Listing
 						</a>
 						<a class="dropdown-item" (click)="navigatePage('/cart')">
 							<i class="ni ni-bullet-list-67 text-success"> </i> Cart
@@ -266,6 +266,15 @@
 						<a class="dropdown-item" (click)="navigatePage('/orders')">
 							<i class="ni ni-bullet-list-67 text-success"> </i> Orders Page
 						</a>
+						<a class="dropdown-item" (click)="navigatePage('/notifications')">
+							<i class="ni ni-bullet-list-67 text-success"> </i> Notifications Page
+						</a>
+						<a class="dropdown-item" (click)="navigatePage('/transactions')">
+							<i class="ni ni-bullet-list-67 text-success"> </i> Transactions Page
+						</a>
+						<a class="dropdown-item" (click)="navigatePage('/personal-involvement')">
+							<i class="ni ni-bullet-list-67 text-success"> </i> Personal Involvement Page
+						</a>
 					</div>
 				</li>
 
@@ -274,6 +283,66 @@
 						<i class="fas fas-clipboard-list"></i>
 						<span class="nav-link-inner--text">Changelog</span>
 					</a>
+				</li>
+
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" placement="bottom-right" role="button">
+						<i class="fas fa-bell"></i>
+					</a>
+					<div class="dropdown-menu dropdown-menu-xl dropdown-menu-right py-0 overflow-hidden">
+						<!-- Dropdown header -->
+						<div class="px-3 py-3">
+							<h6 class="text-sm text-muted m-0">
+								You have <strong class="text-primary">2</strong> notifications.
+							</h6>
+						</div>
+						<!-- List group -->
+						<div class="list-group list-group-flush">
+							<a href="javascript:void()" class="list-group-item list-group-item-action">
+								<div class="row align-items-center">
+									<div class="col-auto">
+										<!-- Avatar -->
+										<i class="far fa-bell"></i>
+									</div>
+									<div class="col ml--2">
+										<div class="d-flex justify-content-between align-items-center">
+											<p class="text-sm mb-0">
+												You purchase has expired
+											</p>
+											<div class="text-right text-muted">
+												<small>1 hrs ago</small>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="javascript:void()" class="list-group-item list-group-item-action">
+								<div class="row align-items-center">
+									<div class="col-auto">
+										<!-- Avatar -->
+										<i class="far fa-bell"></i>
+									</div>
+									<div class="col ml--2">
+										<div class="d-flex justify-content-between align-items-center">
+											<p class="text-sm mb-0">
+												You have successfully purchase a product
+											</p>
+											<div class="text-right text-muted">
+												<small>3 hrs ago</small>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- View all -->
+						<a 
+						(click)="navigatePage('/notifications')"
+							class="dropdown-item text-center text-primary font-weight-bold py-3"
+						>
+							View all
+						</a>
+					</div>
 				</li>
 
 				<li class="nav-item dropdown">

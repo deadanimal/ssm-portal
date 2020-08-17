@@ -26,6 +26,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PresentationModule } from './presentation/presentation.module';
 
+import { ToastrModule } from 'ngx-toastr';
+
 import { CoreLayoutComponent } from './layouts/core-layout/core-layout.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -58,7 +60,15 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     TabsModule.forRoot(),
     TimepickerModule.forRoot(),
     TooltipModule.forRoot(),
-    TmNgOdometerModule
+    TmNgOdometerModule,
+    ToastrModule.forRoot({
+      timeOut: 3000,
+      positionClass: 'toast-bottom-right',
+      preventDuplicates: true,
+      tapToDismiss: true,
+      progressBar: true,
+      progressAnimation: 'decreasing'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -13,12 +13,18 @@ import { CoreRoutes } from './core.routing';
 import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { OrdersComponent } from './orders/orders.component';
+import { TransactionsComponent } from './transactions/transactions.component';
+import { NotificationsComponent } from './notifications/notifications.component';
+import { SearchEngineComponent } from './search-engine/search-engine.component';
 
 @NgModule({
   declarations: [
     CartComponent,
     CheckoutComponent,
-    OrdersComponent
+    OrdersComponent,
+    TransactionsComponent,
+    NotificationsComponent,
+    SearchEngineComponent
   ],
   imports: [
     CommonModule,

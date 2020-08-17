@@ -24,7 +24,7 @@ export const PagesRoutes: Routes = [
                 component: Landing2Component
             },
             {
-                path: 'search1',
+                path: 'product-listing',
                 component: Search1Component
             },
             {

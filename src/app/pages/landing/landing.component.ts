@@ -11,6 +11,12 @@ export class LandingComponent implements OnInit {
 
   public totalCompanies: number = 1360941;
   public totalBusinessess: number = 7810212;
+
+  public searchOptions = [
+    { value: 'roc', text: 'ROC' },
+    { value: 'rob', text: 'ROB' },
+    { value: 'pi', text: 'Personal Involvement' }
+  ]
   
   constructor() {}
   scrollToDownload(element: any) {

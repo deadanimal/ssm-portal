@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-landing3',
@@ -11,9 +12,16 @@ export class Landing3Component implements OnInit {
   public totalCompanies: number = 1360941;
   public totalBusinessess: number = 7810212;
   
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  navigatePage(path: string) {
+    // console.log('Path: ', path)
+    this.router.navigate([path])
   }
 
 }
