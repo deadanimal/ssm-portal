@@ -6,7 +6,7 @@ import { CoreLayoutComponent } from './layouts/core-layout/core-layout.component
 // import { PublicModule } from './public/public.module';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'landing', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   {
     path: '',
     component: CoreLayoutComponent,
