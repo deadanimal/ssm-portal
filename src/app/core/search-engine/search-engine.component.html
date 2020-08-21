@@ -1,55 +1,71 @@
-<div class="wrapper">
-    <div class="cd-section">
-        <div class="section features-7">
-            <div class="container mt-6">
+<header class="header-2 skew-separator">
+    <div class="page-header">
+        <div class="page-header-image" style="background-image: url('assets/img/background/putrajaya.jpg')"></div>
+        <div class="container pt-300">
+            <div class="cd-section">
+                <div class="section features-7">
+                    <div class="container mt-2">
+                        <div class="row">
+                            <div class="col">
+                                <h4 class="display-3 text-center">
+                                    <strong>Seach Company and Business Information</strong>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="container mb-9">
                 <div class="row">
-                    <div class="col-md-8">
-                        <h4 class="display-3">Search Engine</h4>
+                    <div class="col">
+                        <div class="card card-raised card-form-horizontal">
+                            <div class="card-body">
+                                <form action="" method="">
+                                    <div class="row">
+                                        <div class="col-sm-8">
+                                            <div class="input-group" [ngClass]="{ focused: focus === true }">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="fas fa-info"> </i>
+                                                    </span>
+                                                </div>
+                                                <input class="form-control"
+                                                    placeholder="Type company, business or audit firm to search..."
+                                                    type="text" (blur)="focus = false" (focus)="focus = true" />
+                                            </div>
+                                        </div>
+        
+                                        <div class="col-sm-2">
+                                            <div class="input-group">
+                                                <select class="form-control">
+                                                    <option selected>Business</option>
+                                                    <option>Company</option>
+                                                    <option>Audit Firm</option>
+                                                </select>
+                                            </div>
+                                        </div>
+        
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-primary" type="button" (click)="search()">
+                                                Search
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <span class="text-small text-light">Please exclude sysmbol ("-") and alphabet ("A") Example: "123" instead "1234-A".</span>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+</header>
+<div class="wrapper">
     <div class="container mb-9">
         <div class="row">
             <div class="col">
-                <div class="card card-raised card-form-horizontal">
-                    <div class="card-body">
-                        <form action="" method="">
-                            <div class="row">
-                                <div class="col-sm-8">
-                                    <div class="input-group" [ngClass]="{ focused: focus === true }">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">
-                                                <i class="fas fa-info"> </i>
-                                            </span>
-                                        </div>
-                                        <input class="form-control"
-                                            placeholder="Please enter company, business or audit firm to search..."
-                                            type="text" (blur)="focus = false" (focus)="focus = true" />
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-2">
-                                    <div class="input-group">
-                                        <select class="form-control">
-                                            <option selected>Business</option>
-                                            <option>Company</option>
-                                            <option>Audit Firm</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-2">
-                                    <button class="btn btn-primary" type="button" (click)="search()">
-                                        Search
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
 
                 <div class="card" *ngIf="isNoResult">
                     <div class="card-header">
