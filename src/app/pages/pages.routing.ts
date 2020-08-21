@@ -2,7 +2,6 @@ import { Routes } from '@angular/router';
 import { LandingComponent } from './landing/landing.component';
 import { Landing2Component } from './landing2/landing2.component';
 import { Search1Component } from './search1/search1.component';
-import { CartComponent } from './cart/cart.component';
 import { CbidComponent } from './cbid/cbid.component';
 import { EgovComponent } from './egov/egov.component';
 import { ReceiptComponent } from './receipt/receipt.component';
@@ -24,12 +23,8 @@ export const PagesRoutes: Routes = [
                 component: Landing2Component
             },
             {
-                path: 'product-listing',
+                path: 'zzzz',
                 component: Search1Component
-            },
-            {
-                path: 'cartt',
-                component: CartComponent
             },
             {
                 path: 'cbid',

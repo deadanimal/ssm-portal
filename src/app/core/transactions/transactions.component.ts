@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
+
+class Transaction {
+
+}
 
 @Component({
   selector: 'app-transactions',
@@ -7,9 +12,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TransactionsComponent implements OnInit {
 
-  constructor() { }
+  // Data
+  transactions: any [] = []
+
+  constructor(
+    private toastr: ToastrService
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  loadData() {
+
+  }
+
+  download(transaction: Transaction) {
+    let title = 'Downloading'
+    let message = 'Your file is downloading'
+    this.toastr.success(message, title)
   }
 
 }

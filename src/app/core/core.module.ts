@@ -16,6 +16,9 @@ import { OrdersComponent } from './orders/orders.component';
 import { TransactionsComponent } from './transactions/transactions.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { SearchEngineComponent } from './search-engine/search-engine.component';
+import { ProductListingComponent } from './product-listing/product-listing.component';
+import { PersonalInvolvementComponent } from './personal-involvement/personal-involvement.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { SearchEngineComponent } from './search-engine/search-engine.component';
     OrdersComponent,
     TransactionsComponent,
     NotificationsComponent,
-    SearchEngineComponent
+    SearchEngineComponent,
+    ProductListingComponent,
+    PersonalInvolvementComponent,
+    ProfileComponent
   ],
   imports: [
     CommonModule,
