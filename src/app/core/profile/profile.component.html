@@ -1,88 +1,477 @@
 <div class="wrapper">
-    <section class="section-profile-cover section-shaped my-0">
-        <img class="bg-image" src="assets/img/pages/mohamed.jpg" style="width: 100%;" />
+    <div class="section">
+        <div class="container pt-6">
+            <div class="nav-wrapper">
+                <tabset type="pills" class="tab-space">
+                    <tab heading="My Account">
+                        <div class="card">
+                            <div class="card-body bg-secondary">
+                                <h6 class="heading-small text-muted mb-4">User information</h6>
 
-        <div class="separator separator-bottom separator-skew">
-            <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
-                xmlns="http://www.w3.org/2000/svg">
-                <polygon class="fill-secondary" points="2560 0 2560 100 0 100"></polygon>
-            </svg>
-        </div>
-    </section>
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Name</label>
+                                            <input class="form-control" placeholder="Enter name">
+                                        </div>
+                                    </div>
 
-    <section class="section bg-secondary">
-        <div class="container">
-            <div class="card card-profile shadow mt--300">
-                <div class="px-4">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-3 order-lg-2">
-                            <div class="card-profile-image">
-                                <a href="javascript:;">
-                                    <img class="rounded-circle" src="assets/img/faces/team-4.jpg" />
-                                </a>
+                                    <div class="col-sm-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Email address</label>
+                                            <input class="form-control" placeholder="Enter email address">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Username</label>
+                                            <input class="form-control" placeholder="Enter username">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Phone number</label>
+                                            <input class="form-control" placeholder="Enter phone number">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr class="my-4" />
+
+                                <h6 class="heading-small text-muted mb-4">Billing Information</h6>
+
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Address line 1</label>
+                                            <input class="form-control" placeholder="Enter address line 1">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Address line 2</label>
+                                            <input class="form-control" placeholder="Enter address line 2">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Address line 3</label>
+                                            <input class="form-control" placeholder="Enter address line 3">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label">City</label>
+                                            <input class="form-control" placeholder="Enter city">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-4">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Postcode</label>
+                                            <input class="form-control" placeholder="Enter postcode">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 col-lg-4">
+                                        <div class="form-group">
+                                            <label class="form-control-label">State</label>
+                                            <input class="form-control" placeholder="Enter state">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 col-lg-4">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Country</label>
+                                            <input class="form-control" placeholder="Enter country">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <button class="btn btn-ssm float-right">Save</button>
+                                </div>
                             </div>
                         </div>
+                    </tab>
 
-                        <div class="col-lg-4 order-lg-3 text-lg-right align-self-lg-center">
-                            <div class="card-profile-actions py-4 mt-lg-0">
-                                <a class="btn btn-sm btn-info mr-4" href="#"> Connect </a>
-                                <a class="btn btn-sm btn-default float-right" href="#">
-                                    Message
-                                </a>
+                    <tab heading="My Transactions">
+                        <div class="card">
+                            <div class="card-body bg-secondary">
+                                <h6 class="heading-small text-muted mb-4">Transactions Information</h6>
+
+                                <div class="row">
+                                    <div class="col-sm-6 col-lg-2">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Start date</label>
+                                            <div class="input-group mb-4">
+                                                <div class="input-group-prepend">
+                                                  <span class="input-group-text">
+                                                    <i class="fas fa-calendar-alt"> </i>
+                                                  </span>
+                                                </div>
+                                                <input class="form-control" type="date">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6 col-lg-2">
+                                        <div class="form-group">
+                                            <label class="form-control-label">End date</label>
+                                            <div class="input-group mb-4">
+                                                <div class="input-group-prepend">
+                                                  <span class="input-group-text">
+                                                    <i class="far fa-calendar-alt"> </i>
+                                                  </span>
+                                                </div>
+                                                <input class="form-control" type="date">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6 col-lg-2">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Transaction type</label>
+                                            <div class="input-group mb-4">
+                                                <div class="input-group-prepend">
+                                                  <span class="input-group-text">
+                                                    <i class="far fa-list-alt"> </i>
+                                                  </span>
+                                                </div>
+                                                <select class="form-control">
+                                                    <option>Purchase document</option>
+                                                    <option>Topup credit</option>
+                                                    <option>Refund credit</option>
+                                                    <option>Remove credit</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6 col-lg-2">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Account name</label>
+                                            <div class="input-group mb-4">
+                                                <div class="input-group-prepend">
+                                                  <span class="input-group-text">
+                                                    <i class="fas fa-user-alt"> </i>
+                                                  </span>
+                                                </div>
+                                                <input class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6 col-lg-2">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Username</label>
+                                            <div class="input-group mb-4">
+                                                <div class="input-group-prepend">
+                                                  <span class="input-group-text">
+                                                    <i class="far fa-user"> </i>
+                                                  </span>
+                                                </div>
+                                                <input class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6 col-lg-2">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Billing name</label>
+                                            <div class="input-group mb-4">
+                                                <div class="input-group-prepend">
+                                                  <span class="input-group-text">
+                                                    <i class="fas fa-file-invoice"> </i>
+                                                  </span>
+                                                </div>
+                                                <input class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="table-responsive">
+                                    <table class="table align-items-center table-flush">
+                                        <thead class="thead-light">
+                                            <tr>
+                                                <th scope="col">Details</th>
+                                                <th scope="col">Invoice</th>
+                                                <th scope="col">Date</th>
+                                                <th scope="col">User</th>
+                                                <th scope="col">Transaction Type</th>
+                                                <th scope="col">Method</th>
+                                                <th scope="col">Reference</th>
+                                                <th scope="col">Price</th>
+                                                <th scope="col">Discount</th>
+                                                <th scope="col">Tax</th>
+                                                <th scope="col">Total</th>
+                                                <th scope="col">Receipt</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody class="list">
+                                            <tr>
+                                                <td>
+                                                    <button 
+                                                        class="btn btn-ssm btn-sm"
+                                                        (click)="openTransactionDetail(transactionDetail)"
+                                                    >
+                                                        View
+                                                    </button>
+                                                </td>
+                                                <td>PP2020061001</td>
+                                                <td>10/06/2020 10:20:12</td>
+                                                <td>Aiman</td>
+                                                <td>Online</td>
+                                                <td>FPX</td>
+                                                <td>PP202008310001</td>
+                                                <td></td>
+                                                <td>RM0.00</td>
+                                                <td>RM0.00</td>
+                                                <td>RM0.00</td>
+                                                <td>
+                                                    <button
+                                                        class="btn btn-ssm btn-sm"
+                                                        (click)="successDownload()"
+                                                    >
+                                                        Download
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
+                    </tab>
 
-                        <div class="col-lg-4 order-lg-1">
-                            <div class="card-profile-stats d-flex justify-content-center">
-                                <div>
-                                    <span class="heading"> 22 </span>
-                                    <span class="description"> Friends </span>
-                                </div>
-                                <div>
-                                    <span class="heading"> 10 </span>
-                                    <span class="description"> Photos </span>
-                                </div>
-                                <div>
-                                    <span class="heading"> 89 </span>
-                                    <span class="description"> Comments </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="text-center mt-5">
-                        <h3>
-                            Jessica Jones<span class="font-weight-light"> , 27 </span>
-                        </h3>
-                        <div class="h6 font-weight-300">
-                            <i class="ni location_pin mr-2"> </i> Bucharest, Romania
-                        </div>
-                        <div class="h6 mt-4">
-                            <i class="ni business_briefcase-24 mr-2"> </i> Solution
-                            Manager - Creative Tim Officer
-                        </div>
-                        <div>
-                            <i class="ni education_hat mr-2"> </i> University of Computer
-                            Science
-                        </div>
-                    </div>
-                    
-                    <div class="mt-5 py-5 border-top text-center">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-9">
-                                <p>
-                                    An artist of considerable range, Ryan — the name taken by
-                                    Melbourne-raised, Brooklyn-based Nick Murphy — writes,
-                                    performs and records all of his own music, giving it a
-                                    warm, intimate feel with a solid groove structure. An
-                                    artist of considerable range.
+                    <tab heading="My Orders">
+                        <div class="card">
+                            <div class="card-body bg-secondary">
+                                <h6 class="heading-small text-muted mb-4">My orders</h6>
+                                <p class="my-0">
+                                    Disclaimer:
                                 </p>
-                                <a href="javascript:;"> Show more </a>
+                                <ol>
+                                    <li class="font-smaller">
+                                        Every successful purchase will be kept in order menu for 7 
+                                        day(s) from the date purchased. Please download your document 
+                                        accordingly.
+                                    </li>
+                                    <li class="font-smaller">
+                                        If customer are unable to download product purchased within 7 
+                                        day(s). Please contact SSM Enquiry.
+                                    </li>
+                                </ol> 
+
+                                <div class="table-responsive">
+                                    <table class="table align-items-center table-flush">
+                                        <thead class="thead-light">
+                                            <tr>
+                                                <th>Order Number</th>
+                                                <th>Date & Time Purchased</th>
+                                                <th>Entity Name</th>
+                                                <th>Product Description</th>
+                                                <th>Language</th>
+                                                <th>Status</th>
+                                                <th>Document Output</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody class="list">
+                                            <tr>
+                                                <td>SSMA2020061001</td>
+                                                <td>20/08/2020 10:20:12</td>
+                                                <td>198901001388 (176123-V) / Dialog Group Berhad</td>
+                                                <td>Company Profile CTC</td>
+                                                <td><span class="badge badge-primary">EN</span></td>
+                                                <td><span class="badge badge-success">Success</span></td>
+                                                <td><button class="btn btn-ssm btn-sm">Download</button></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>SSMA2020061000</td>
+                                                <td>20/08/2020 10:20:12</td>
+                                                <td>198901001388 (176123-V) / Dialog Group Berhad</td>
+                                                <td>Company Profile CTC</td>
+                                                <td><span class="badge badge-primary">EN</span></td>
+                                                <td><span class="badge badge-warning">Failed</span></td>
+                                                <td><button class="btn btn-ssm btn-sm">Download</button></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>SSMA2020061002</td>
+                                                <td>20/08/2020 10:20:12</td>
+                                                <td>198901001388 (176123-V) / Dialog Group Berhad</td>
+                                                <td>Company Profile CTC</td>
+                                                <td><span class="badge badge-primary">EN</span></td>
+                                                <td><span class="badge badge-info">Resupply</span></td>
+                                                <td><button class="btn btn-ssm btn-sm">Download</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </tab>
+
+                    <tab heading="My Wishlists">
+                        <div class="card">
+                            <div class="card-body bg-secondary">
+                                <h6 class="heading-small text-muted mb-4">My wishlists</h6>
+
+                                <div class="table-responsive">
+                                    <table class="table align-items-center table-flush">
+                                        <thead class="thead-light">
+                                            <tr>
+                                                <th>Order Number</th>
+                                                <th>Entity Name</th>
+                                                <th>Product Description</th>
+                                                <th>Language</th>
+                                                <th>Document Output</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody class="list">
+                                            <tr>
+                                                <td>SSMA2020061001</td>
+                                                <td>198901001388 (176123-V) / Dialog Group Berhad</td>
+                                                <td>Company Profile CTC</td>
+                                                <td><span class="badge badge-primary">EN</span></td>
+                                                <td>
+                                                    <button class="btn btn-ssm btn-sm btn-icon">
+                                                        <span class="btn-inner--icon">
+                                                            <i class="fas fa-cart-plus"> </i>
+                                                         </span>
+                                                        <span class="btn-inner--text">Add to Cart</span>
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>SSMA2020061000</td>
+                                                <td>198901001388 (176123-V) / Dialog Group Berhad</td>
+                                                <td>Company Profile CTC</td>
+                                                <td><span class="badge badge-primary">EN</span></td>
+                                                <td>
+                                                    <button class="btn btn-ssm btn-sm btn-icon">
+                                                        <span class="btn-inner--icon">
+                                                            <i class="fas fa-cart-plus"> </i>
+                                                         </span>
+                                                        <span class="btn-inner--text">Add to Cart</span>
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>SSMA2020061002</td>
+                                                <td>198901001388 (176123-V) / Dialog Group Berhad</td>
+                                                <td>Company Profile CTC</td>
+                                                <td><span class="badge badge-primary">EN</span></td>
+                                                <td>
+                                                    <button class="btn btn-ssm btn-sm btn-icon">
+                                                        <span class="btn-inner--icon">
+                                                            <i class="fas fa-cart-plus"> </i>
+                                                         </span>
+                                                        <span class="btn-inner--text">Add to Cart</span>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </tab>
+                </tabset>
             </div>
         </div>
-    </section>
+    </div>
 </div>
+
+<ng-template #transactionDetail>
+    <div class="modal-header bg-ssm">
+        <h4 class="modal-title text-white my-auto" id="modal-title-default">
+            Transaction detail
+        </h4>
+
+        <button
+            aria-label="Close"
+            class="close"
+            data-dismiss="modal"
+            type="button"
+            (click)="closeTransactionDetail()"
+        >
+            <span aria-hidden="true" class="text-white my-auto"> × </span>
+        </button>
+    </div>
+
+    <div class="modal-body">
+        <div class="table-responsive">
+            <table class="table align-items-center table-flush">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Order Number</th>
+                        <th>Product Description</th>
+                        <th>Entity Name</th>
+                        <th>Language</th>
+                        <th>Status</th>
+                        <th>Price</th>
+                        <th>Service Fee</th>
+                        <th>CTC Service Fee</th>
+                        <th>Discount</th>
+                        <th>Total</th>
+                        <th>Buy Again?</th>
+                    </tr>
+                </thead>
+                <tbody class="list">
+                    <tr>
+                        <td>SSMA2020082500001</td>
+                        <td>Certificates of Incorporation / Registration </td>
+                        <td>197201000557 (1211-D) / Yong Peng Batu Pahat Sdn. Bhd.</td>
+                        <td><span class="badge badge-primary">EN</span></td>
+                        <td><span class="badge badge-success">Success</span></td>
+                        <td>RM20.00</td>
+                        <td>RM0.00</td>
+                        <td>RM0.00</td>
+                        <td>RM0.00</td>
+                        <td>RM25.00</td>
+                        <td>
+                            <button class="btn btn-ssm btn-sm">Add to cart</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="float-right text-right">
+            <p class="mb-0">Total document: 1</p>
+            <p class="m-0">Total (excluded SST): RM25.00</p>
+            <p class="m-0">SST @ 6% for Service Fee: RM0.00</p>
+            <p class="mt-0">Total amount: RM25.00</p>
+        </div>
+    </div>
+
+    <div class="modal-footer">
+        <button
+            class="btn btn-outline-danger ml-auto"
+            data-dismiss="modal"
+            type="button"
+            (click)="closeTransactionDetail()"
+        >
+            Close
+        </button>
+    </div>
+</ng-template>

@@ -3,11 +3,7 @@
         <div class="col-md-12 mx-auto">
             <carousel>
                 <slide>
-                    <img 
-                        [src]="slider1"
-                        alt="first slide"
-                        style="display: block; width: 100%;"
-                    >
+                    <img [src]="slider1" alt="first slide" style="display: block; width: 100%;">
                 </slide>
             </carousel>
         </div>
@@ -16,73 +12,36 @@
 
 <div class="wrapper">
 
-    <div class="cd-section" id="contact-us">
-        <div class="contactus-1 bg-ssm" style="background-image: url('assets/img/ill/1.svg');">
-            <div class="container py-6">
-                <h2 class="title text-white text-center">Get access to most accurate and comprehensive data</h2>
-                <div class="row">
-                    <div class="col-lg-5 col-md-5 d-flex justify-content-center flex-column">
-                        <h4 class="description text-white"></h4>
-                        <div class="info info-horizontal">
-                            <div class="icon icon-shape icon-shape-primary shadow rounded-circle text-white">
-                                <i class="fas fa-building"> </i>
-                            </div>
-                            <div class="description">
-                                <h3 class="info-title text-white">
-                                    Companies:
-                                    <tm-ng-odometer [number]="totalCompanies"></tm-ng-odometer>
-                                </h3>
-                                <h4 class="description ml-3 text-white">
-                                    Local:
-                                    <tm-ng-odometer [number]="totalLocal"></tm-ng-odometer>
-                                </h4>
-                                <h4 class="description ml-3 text-white">
-                                    Foreign:
-                                    <tm-ng-odometer [number]="totalForeign"></tm-ng-odometer>
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-5 col-md-7 ml-auto mr-auto">
-                        <div class="info info-horizontal text-right">
-                            <div class="icon icon-shape icon-shape-primary shadow rounded-circle text-white">
-                                <i class="far fa-building"> </i>
-                            </div>
-                            <div class="description">
-                                <h3 class="info-title text-white">
-                                    Businesses:
-                                    <tm-ng-odometer [number]="totalBusinessess"></tm-ng-odometer>
-                                </h3>
-                                <h4 class="description ml-3 text-white">
-                                    Sole Proprietorship:
-                                    <tm-ng-odometer [number]="totalSoleProprietorship"></tm-ng-odometer>
-                                </h4>
-                                <h4 class="description ml-3 text-white">
-                                    Partnership: 
-                                    <tm-ng-odometer [number]="totalPartnership"></tm-ng-odometer>
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="cd-section" id="blogs">
         <section class="blogs-2">
             <div class="container-fluid py-6">
                 <div class="row mb-md-5">
                     <div class="col-md-8 mx-auto">
-                        <h2 class="title text-white text-center">Site Map</h2>
+                        <h2 class="title text-ssm text-center font-weight-bold">
+                            Get access to most accurate and comprehensive data
+                        </h2>
+
+                        <div class="row">
+                            <div class="col border-right">
+                                <h1 class="text-ssm text-right">
+                                    <tm-ng-odometer [number]="totalCompanies"></tm-ng-odometer>
+                                </h1>
+                            </div>
+                            <div class="col">
+                                <h1 class="text-ssm text-left mb-0">
+                                    <tm-ng-odometer [number]="totalBusinessess"></tm-ng-odometer>
+                                </h1>
+                                <span class="text-left ml-5">Companies</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col">
                         <div class="card card-blog card-background" data-animation="zooming">
-                            <div class="full-background" style="background-image: url('assets/img/background/menara_ssm.jpg');">
+                            <div class="full-background"
+                                style="background-image: url('assets/img/background/menara_ssm.jpg');">
                             </div>
                             <a href="javascript:;" (click)="navigatePage('/about')">
                                 <div class="card-body">
@@ -95,9 +54,10 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3">
+                    <div class="col">
                         <div class="card card-blog card-background" data-animation="zooming">
-                            <div class="full-background" style="background-image: url('assets/img/background/cart.jpg');">
+                            <div class="full-background"
+                                style="background-image: url('assets/img/background/cart.jpg');">
                             </div>
                             <a href="javascript:;" (click)="navigatePage('/search-engine')">
                                 <div class="card-body">
@@ -110,9 +70,10 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3">
+                    <div class="col">
                         <div class="card card-blog card-background" data-animation="zooming">
-                            <div class="full-background" style="background-image: url('assets/img/background/putrajaya.jpg');">
+                            <div class="full-background"
+                                style="background-image: url('assets/img/background/putrajaya.jpg');">
                             </div>
                             <a href="javascript:;" (click)="navigatePage('/egov')">
                                 <div class="card-body">
@@ -125,9 +86,26 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3">
+                    <div class="col">
                         <div class="card card-blog card-background" data-animation="zooming">
-                            <div class="full-background" style="background-image: url('assets/img/background/faq.jpg');">
+                            <div class="full-background"
+                                style="background-image: url('assets/img/background/faq.jpg');">
+                            </div>
+                            <a href="javascript:;" (click)="navigatePage('/enquiry')">
+                                <div class="card-body">
+                                    <div class="content-bottom">
+                                        <h6 class="card-category text-white opacity-8"></h6>
+                                        <h5 class="card-title">Enquiry</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-blog card-background" data-animation="zooming">
+                            <div class="full-background"
+                                style="background-image: url('assets/img/background/faq.jpg');">
                             </div>
                             <a href="javascript:;" (click)="navigatePage('/faq')">
                                 <div class="card-body">
@@ -151,15 +129,15 @@
                     <div class="row">
                         <div class="col pl-8">
                             <p class="m-0"><strong>PRODUCT BANNER</strong></p>
-                            <h4 class="m-0"><strong>Our Products</strong></h4>
-                            <h2 style="color: #231e6d;"><strong>Business Profile</strong></h2>
+                            <h4 class="m-0 font-weight-bold">Our Products</h4>
+                            <h2 class="text-ssm font-weight-bolder">Business Profile</h2>
 
                             <p class="text-dark">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                 aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                                 voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fugiat nulla pariatur
                             </p>
 
                             <div class="my-4 float-right">
