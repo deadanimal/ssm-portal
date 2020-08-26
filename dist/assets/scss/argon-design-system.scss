@@ -43,6 +43,11 @@ Coded by www.creative-tim.com
 // Regular style toast
 @import '~ngx-toastr/toastr';
 
+// ngx-datatable
+@import '~@swimlane/ngx-datatable/index.css';
+@import '~@swimlane/ngx-datatable/themes/material.scss';
+@import '~@swimlane/ngx-datatable/assets/icons.css';
+
 // Bootstrap style toast
 // or import a bootstrap 4 alert styled design (SASS ONLY)
 // Should be after your bootstrap imports, it uses bs4 variables, mixins, functions

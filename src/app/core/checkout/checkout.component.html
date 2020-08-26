@@ -1,116 +1,69 @@
-<div class="section-shaped skew-separator skew-mini">
-    <div class="page-header page-header-small header-filter">
-        <div class="page-header-image" style="background-image: url('assets/img/background/document.jpg');"></div>
-        <div class="container">
-            <div class="header-body text-center mb-7">
-                <div class="row justify-content-center">
-                    <div class="col-xl-5 col-lg-6 col-md-8 px-5">
-                        <h1 class="text-white">Checkout</h1>
-                        <p class="text-lead text-white">
-                        </p>
+<div class="wrapper">
+    <section class="section-shaped title-bg bg-mini">
+        <div class="page-header page-header-small header-filter-white">
+            <div class="page-header-image" style="background-image: url('assets/img/banner/banner-cart.jpg');"></div>
+            <div class="container">
+                <div class="header-body text-center mb-9">
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <h1 class="text-ssm font-weight-bolder mb-0">CHECKOUT</h1>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<div class="upper">
-    <div class="container">
+    </section>
+
+    <div class="container mt--9">
         <div class="row">
             <div class="col">
-                <div class="card">
-                    <form class="js-validate">
-                        <div class="container">
-                            <h3 class="title mt-3">Billing details</h3>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <label class="labels">
-                                        Full name <span class="text-danger"> * </span>
-                                    </label>
-                                    <input aria-label="Amin Redzuan" class="form-control" name="firstName"
-                                        placeholder="Amin Redzuan" required="" type="text" />
-                                </div>
-                            </div>
-                            <br />
+                <div class="table-responsive">
+                    <table class="table align-items-center table-flush">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Product Details</th>
+                                <th>Search Criteria</th>
+                                <th>Total Pages</th>
+                                <th>Total Company</th>
+                                <th>Unit Price (RM)</th>
+                                <th>Total Price (RM)</th>
+                            </tr>
+                        </thead>
 
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="js-form-message">
-                                        <label class="labels">
-                                            Address 1<span class="text-danger"> * </span>
-                                        </label>
-                                        <input aria-label="C3-A-12" class="form-control" name="streetAddress"
-                                            placeholder="C3-A-12" required="" type="text" />
-                                    </div>
-                                </div>
+                        <tbody class="list">
+                            <tr>
+                                <td>Company Listing - Package A</td>
+                                <td>View Search Criteria</td>
+                                <td>3</td>
+                                <td>25</td>
+                                <td>4.00</td>
+                                <td>100.00</td>
+                            </tr>
 
-                                <div class="col-md-6">
-                                    <div class="js-form-message">
-                                        <label class="labels">
-                                            Address 2<span class="text-danger"> * </span>
-                                        </label>
-                                        <input aria-label="Metropolitan Square" class="form-control" name="streetAddress"
-                                            placeholder="Metropolitan Square" required="" type="text" />
-                                    </div>
-                                </div>
+                            <tr>
+                                <td>Company Listing - Package A</td>
+                                <td>View Search Criteria</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>4.00</td>
+                                <td>4.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-                                <div class="col-md-6">
-                                    <div class="js-form-message">
-                                        <label class="labels">
-                                            Address 3<span class="text-danger"> * </span>
-                                        </label>
-                                        <input aria-label="PJU 8/1" class="form-control" name="streetAddress"
-                                            placeholder="PJU 8/1" required="" type="text" />
-                                    </div>
-                                </div>
-                                
-                                <div class="col-md-6">
-                                    <div class="js-form-message">
-                                        <label class="labels">
-                                            Postcode <span class="text-danger"> * </span>
-                                        </label>
-                                        <input aria-label="47810" class="form-control" name="postcode"
-                                            placeholder="47810" required="" type="text" />
-                                    </div>
-                                </div>
-                            </div>
-                            <br />
+                <div class="float-right py-4">
+                    <p class="m-0 text-right">Total Document: 2</p>
+                    <p class="m-0 text-right">Total exclude SST & Rounding Adj. (RM): 104.00</p>
+                    <p class="m-0 text-right">SST @ 6% for Service Fee & Rounding Adj. (RM): 1.55</p>
+                    <p class="m-0 text-right">Total Amount & Rounding Adj. (RM): 105.55</p>
 
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="js-form-message mb-4">
-                                        <label class="labels">
-                                            City <span class="text-danger"> * </span>
-                                        </label>
-                                        <input aria-label="Petaling Jaya" class="form-control" name="cityAddress"
-                                            placeholder="Petaling Jaya" required="" type="text" />
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mb-4">
-                                        <label class="labels">
-                                            State <span class="text-danger"> * </span>
-                                        </label>
-                                        <select class="form-control" data-trigger="" id="choices-single-default"
-                                            name="choices-single-default">
-                                            <option selected=""> Select state </option>
-                                            <option value="CZ"> Pahang </option>
-                                            <option value="DK"> Kuala Lumpur </option>
-                                            <option value="DO"> Selangor </option>
-                                            <option value="IQ"> Perlis </option>
-                                            <option value="IL"> Pulau Pinang </option>
-                                            <option value="IT"> Negeri Sembilan </option>
-                                        </select>
-                                    </div>
-
-                                    <button class="btn btn-primary btn-sm float-right mb-3" type="submit" (click)="confirm()">
-                                        Make Payment
-                                    </button>
-
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                    <button 
+                        class="btn btn-ssm float-right mt-4"
+                        (click)="navigatePage('/payment')"
+                    >
+                        Continue to Payment
+                    </button>
                 </div>
             </div>
         </div>

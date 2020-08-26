@@ -8,6 +8,16 @@ import { ProductListingComponent } from './product-listing/product-listing.compo
 import { SearchEngineComponent } from './search-engine/search-engine.component';
 import { TransactionsComponent } from './transactions/transactions.component';
 import { ProfileComponent } from './profile/profile.component';
+import { EnquiryComponent } from './enquiry/enquiry.component';
+import { EnquiryGeneralComponent } from './enquiry-general/enquiry-general.component';
+import { EnquiryKjakpComponent } from './enquiry-kjakp/enquiry-kjakp.component';
+import { KjakpComponent } from './kjakp/kjakp.component';
+import { CbidComponent } from './cbid/cbid.component';
+import { PaymentComponent } from './payment/payment.component';
+import { SharesDirectorsComponent } from './shares-directors/shares-directors.component';
+import { CompanyDetailComponent } from './company-detail/company-detail.component';
+import { CustomizedDataComponent } from './customized-data/customized-data.component';
+import { ProductPurchaseComponent } from './product-purchase/product-purchase.component';
 
 export const CoreRoutes: Routes = [
     {
@@ -18,8 +28,41 @@ export const CoreRoutes: Routes = [
                 component: CartComponent
             },
             {
+                path: 'cbid',
+                component: CbidComponent
+            },
+            {
                 path: 'checkout',
                 component: CheckoutComponent
+            },
+            {
+                path: 'company-detail',
+                component: CompanyDetailComponent
+            },
+            {
+                path: 'customized-data',
+                component: CustomizedDataComponent
+            },
+            {
+                path: 'enquiry',
+                children: [
+                    {
+                        path: '',
+                        component: EnquiryComponent
+                    },
+                    {
+                        path: 'general',
+                        component: EnquiryGeneralComponent
+                    },
+                    {
+                        path: 'kjakp',
+                        component: EnquiryKjakpComponent
+                    }
+                ]
+            },
+            {
+                path: 'kjakp',
+                component: KjakpComponent
             },
             {
                 path: 'notifications',
@@ -30,12 +73,20 @@ export const CoreRoutes: Routes = [
                 component: OrdersComponent
             },
             {
+                path: 'payment',
+                component: PaymentComponent
+            },
+            {
                 path: 'personal-involvement',
                 component: PersonalInvolvementComponent
             },
             {
                 path: 'product-listing',
                 component: ProductListingComponent
+            },
+            {
+                path: 'product-purchase',
+                component: ProductPurchaseComponent
             },
             {
                 path: 'profile',
@@ -48,6 +99,10 @@ export const CoreRoutes: Routes = [
             {
                 path: 'search-engine',
                 component: SearchEngineComponent
+            },
+            {
+                path: 'shares-directors',
+                component: SharesDirectorsComponent
             }
         ]
     }

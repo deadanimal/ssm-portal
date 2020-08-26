@@ -27,7 +27,7 @@ export const PagesRoutes: Routes = [
                 component: Search1Component
             },
             {
-                path: 'cbid',
+                path: 'cbidz',
                 component: CbidComponent
             },
             {
