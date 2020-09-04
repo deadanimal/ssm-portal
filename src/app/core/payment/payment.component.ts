@@ -31,6 +31,10 @@ export class PaymentComponent implements OnInit {
       customClass: {
         confirmButton: 'btn btn-success '
       }
+    }).then((result) => {
+      if (result.value) {
+        this.router.navigate(['/profile'])
+      }
     })
     console.log('confirm')
   }

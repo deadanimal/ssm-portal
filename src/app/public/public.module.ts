@@ -7,6 +7,7 @@ import { TmNgOdometerModule } from 'tm-ng-odometer';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { ModalModule } from 'ngx-bootstrap/modal';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 
@@ -34,6 +35,7 @@ import { HomeComponent } from './home/home.component';
     BsDropdownModule.forRoot(),
     CollapseModule.forRoot(),
     CarouselModule.forRoot(),
+    ModalModule.forRoot(),
     PaginationModule.forRoot(),
     TabsModule.forRoot(),
     RouterModule.forChild(PublicRoutes)

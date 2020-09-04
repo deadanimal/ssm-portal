@@ -19,6 +19,8 @@ export class HomeComponent implements OnInit {
   // Image
   slider1 = 'assets/img/carousel/landscape-1.jpg'
   slider2 = 'assets/img/carousel/landscape-2.jpg'
+  slider3 = 'assets/img/banner/banner portal-01.png'
+  slider4 = 'assets/img/banner/banner portal-02.png'
 
   constructor(
     private router: Router

@@ -277,6 +277,9 @@ SOFTWARE.
 ngx-chips
 MIT
 
+ngx-spinner
+MIT
+
 ngx-toastr
 MIT
 The MIT License (MIT)

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { NgxSpinnerModule } from "ngx-spinner";
 
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
@@ -59,6 +60,7 @@ import { ProductPurchaseComponent } from './product-purchase/product-purchase.co
     CommonModule,
     FormsModule,
     NgxDatatableModule,
+    NgxSpinnerModule,
     ReactiveFormsModule,
     BsDropdownModule.forRoot(),
     CollapseModule.forRoot(),

@@ -45,6 +45,10 @@ export class ProfileComponent implements OnInit {
       customClass: {
         confirmButton: 'btn btn-outline-success '
       }
+    }).then((result) => {
+      if (result.value) {
+        window.open('https://pipeline-project.sgp1.digitaloceanspaces.com/ssm/product/1599179232-96afbd34518b47af99a1fe4f488185d8.pdf', "_blank");
+      }
     })
     console.log('confirm')
   }

@@ -291,3 +291,15 @@ h6 {
   background: rgba(255, 255, 255, 0.733) !important;
   //opacity: 0.6;
 }
+
+// Form
+
+.rounded-pill-right {
+    border-top-right-radius: 50rem !important; 
+    border-bottom-right-radius: 50rem !important;
+}
+
+.rounded-pill-left {
+    border-top-left-radius: 50rem !important; 
+    border-bottom-left-radius: 50rem !important;
+}

@@ -3,7 +3,14 @@
         <div class="col-md-12 mx-auto">
             <carousel>
                 <slide>
-                    <img [src]="slider1" alt="first slide" style="display: block; width: 100%;">
+                    <!-- <img [src]="slider1" alt="first slide" style="display: block; width: 100%;"> -->
+                    <video width="1920" height="1080" autoplay loop>
+                        <source 
+                            src="https://pipeline-project.sgp1.digitaloceanspaces.com/ssm/resources/videos/portal_ssm_01.mp4"
+                            type="video/mp4"
+                        >
+                        Your browser does not support the video tag.
+                    </video>
                 </slide>
             </carousel>
         </div>
@@ -23,15 +30,81 @@
 
                         <div class="row">
                             <div class="col border-right">
-                                <h1 class="text-ssm text-right">
-                                    <tm-ng-odometer [number]="totalCompanies"></tm-ng-odometer>
-                                </h1>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col">
+                                                <p class="text-ssm text-left mb-0">
+                                                    Sole Proprietorship
+                                                </p>
+                                            </div>
+                                            <div class="col">
+                                                <p class="text-ssm text-left mb-0">
+                                                    : {{totalSoleProprietorship}}
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col">
+                                                <p class="text-ssm text-left mb-0">
+                                                    Partnership
+                                                </p>
+                                            </div>
+                                            <div class="col">
+                                                <p class="text-ssm text-left mb-0">
+                                                    : {{totalPartnership}}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <h1 class="text-ssm text-center mb-0">
+                                            <tm-ng-odometer [number]="totalCompanies"></tm-ng-odometer>
+                                        </h1>
+                                        <p class="text-center">Business</p>
+                                    </div>
+                                </div>
                             </div>
+
                             <div class="col">
-                                <h1 class="text-ssm text-left mb-0">
-                                    <tm-ng-odometer [number]="totalBusinessess"></tm-ng-odometer>
-                                </h1>
-                                <span class="text-left ml-5">Companies</span>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h1 class="text-ssm text-center mb-0">
+                                            <tm-ng-odometer [number]="totalBusinessess"></tm-ng-odometer>
+                                        </h1>
+                                        <p class="text-center">Companies</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col">
+                                                <p class="text-ssm text-left mb-0">
+                                                    Local
+                                                </p>
+                                            </div>
+                                            <div class="col">
+                                                <p class="text-ssm text-left">
+                                                    : {{totalLocal}}
+                                                </p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                            <div class="col">
+                                                <p class="text-ssm text-left mb-0">
+                                                    Foreign
+                                                </p>
+                                            </div>
+
+                                            <div class="col">
+                                                <p class="text-ssm text-left">
+                                                    : {{totalForeign}}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>      
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -141,7 +214,11 @@
                             </p>
 
                             <div class="my-4 float-right">
-                                <button class="btn btn-ssm btn-round mr-1" type="button">
+                                <button 
+                                    class="btn btn-ssm btn-round mr-1"
+                                    type="button"
+                                    (click)="navigatePage('/about')"
+                                >
                                     More Products
                                 </button>
                             </div>
@@ -155,6 +232,14 @@
                             >
                         </div>
                     </div>
+                </slide>
+
+                <slide>
+                    <img [src]="slider3" alt="first slide" style="display: block; width: 75%;" class="d-flex mx-auto">
+                </slide>
+
+                <slide>
+                    <img [src]="slider4" alt="first slide" style="display: block; width: 75%;" class="d-flex mx-auto">
                 </slide>
             </carousel>
         </div>

@@ -21,24 +21,29 @@
                     <div class="col">
                         <div class="card card-raised card-form-horizontal">
                             <div class="card-body">
-                                <form action="" method="">
+                                <form [formGroup]="productForm">
                                     <div class="row">
                                         <div class="col-sm-8">
                                             <div class="input-group" [ngClass]="{ focused: focus === true }">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text">
+                                                <div class="input-group-prepend rounded-pill-left">
+                                                    <span class="input-group-text rounded-pill-left">
                                                         <i class="fas fa-info"> </i>
                                                     </span>
                                                 </div>
-                                                <input class="form-control"
+                                                <input 
+                                                    class="form-control rounded-pill-right"
                                                     placeholder="Type company, business or audit firm to search..."
-                                                    type="text" (blur)="focus = false" (focus)="focus = true" />
+                                                    type="text" 
+                                                    (blur)="focus = false" 
+                                                    (focus)="focus = true"
+                                                    formControlName="registration_number"
+                                                />
                                             </div>
                                         </div>
         
                                         <div class="col-sm-2">
                                             <div class="input-group">
-                                                <select class="form-control">
+                                                <select class="form-control rounded-pill">
                                                     <option selected>Business</option>
                                                     <option>Company</option>
                                                     <option>Audit Firm</option>
@@ -47,7 +52,12 @@
                                         </div>
         
                                         <div class="col-sm-2">
-                                            <button class="btn btn-primary" type="button" (click)="search()">
+                                            <button 
+                                                class="btn btn-primary btn-round"
+                                                type="button"
+                                                (click)="search()"
+                                                [disabled]="!productForm.valid"
+                                            >
                                                 Search
                                             </button>
                                         </div>
@@ -64,16 +74,16 @@
 </header>
 
 <div class="wrapper">
-    <div class="container mb-9">
+    <div class="container mb-7">
         <div class="row">
             <div class="col">
 
-                <div class="card" *ngIf="isNoResult">
+                <div class="card" *ngIf="!isEmpty && isNoResult">
                     <div class="card-header">
                         <h4 class="m-0">Search Result</h4>
                     </div>
 
-                    <div class="table-responsive">
+                    <div class="table-responsive" *ngIf="isNoResult">
                         <table class="table align-items-center table-flush">
                             <thead class="thead-light">
                                 <tr>
@@ -86,6 +96,37 @@
                                 <div class="text-center p-5">
                                     No match found
                                 </div>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card" *ngIf="!isEmpty && isGotResult">
+                    <div class="card-header">
+                        <h4 class="m-0">Search Result</h4>
+                    </div>
+
+                    <div class="table-responsive" *ngIf="isGotResult">
+                        <table class="table align-items-center table-flush">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>Entity</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+
+                            <tbody class="list">
+                                <tr>
+                                    <td>Pipeline Network Sdn. Bhd.</td>
+                                    <td class="text-right">
+                                        <button 
+                                            class="btn btn-sm btn-ssm text-right"
+                                            (click)="viewResult()"
+                                        >
+                                            View
+                                        </button>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -138,3 +179,13 @@
         </div>
     </div>
 </div>
+
+<ngx-spinner
+    bdColor="rgba(0, 0, 0, 0.8)"
+    size="medium" 
+    color = "#fff"
+    type="ball-fussion"
+    [fullScreen]="true"
+>
+    <p style="color: white" > Loading... </p>
+</ngx-spinner>

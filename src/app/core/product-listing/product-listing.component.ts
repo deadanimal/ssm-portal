@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
+import { ProductsService } from 'src/app/shared/services/products/products.service';
 
 class Entity {
   name: string
@@ -28,13 +29,14 @@ export class ProductListingComponent implements OnInit {
   ]
 
   constructor(
-    private toastr: ToastrService
+    private toastr: ToastrService,
+    private productService: ProductsService
   ) { }
 
   ngOnInit(): void {
     this.entity = { 
-      name: 'Pipeline Engineering Sdn. Bhd.', 
-      registration_no: '197801002771 (39761-K)'
+      name: 'PIPELINE NETWORK SDN. BHD.', 
+      registration_no: '201101032401 (960536-K)'
     }
   }
 
@@ -46,6 +48,7 @@ export class ProductListingComponent implements OnInit {
     let title = 'Success'
     let message = 'Item is added to the cart'
     this.toastr.success(message, title)
+    this.productService.cart = true
   }
 
 }
